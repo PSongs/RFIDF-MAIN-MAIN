@@ -1,0 +1,375 @@
+.donate
+{
+    position: absolute;
+    background-color: white;
+    z-index: 10000000000000000000000000000000000000000000000000000000000000;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dialog-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  .dialog-content p {
+    margin-bottom: 20px;
+  }
+  
+  .dialog-content button {
+    background-color: blue;
+    color: white;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+
+.donateNav > :first-child
+{
+    width: 30vw;
+}
+
+.donateNav > :not(:first-child) img
+{
+    width: 6vw;
+}
+
+.donateNav 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 5vw;
+}
+
+.donateNav  div
+{ 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 3vw;
+}
+
+
+.bill
+{
+    
+    width: 100%;
+    padding: 4vw;
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr ;
+
+}
+
+
+.bill > :first-child h1
+{
+     color: rgb(31, 31, 94);
+}
+
+.btnd
+{
+    display: flex;
+    gap: 2vw;
+}
+
+.btnss h1{
+    font-size: 1.5vw;
+    margin: 8px;
+}
+
+.btnd button{
+    width: 20vw;
+    height: 4vw;
+    font-size: 1vw;
+    font-weight: 900;
+    color: white;
+    background-color: gray;
+    border-radius: 5px;
+    cursor: pointer;
+  
+}
+
+.btnd button:hover{
+    width: 20vw;
+    height: 4vw;
+    font-size: 1vw;
+    font-weight: 900;
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+    cursor: pointer;
+  
+}
+
+.billing
+{
+    margin: 15px;
+}
+.billing button
+{
+     height: 50px;
+     width: 5vw;
+     background-color: gray;
+     cursor: pointer;
+     font-weight: 900;
+     color: white;
+}
+
+.billing button:hover
+{
+     height: 50px;
+     width: 5vw;
+     background-color: #5e5d21;
+     cursor: pointer;
+}
+
+.billing input
+{
+    
+    width: 5vw ;
+    height: 50px;
+    
+    
+}
+
+.billing input::placeholder
+{
+    text-align: center;
+}
+
+.donatebtn{
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 10px;
+}
+
+@media (max-width: 1004px){
+
+    .donate
+{
+    position: absolute;
+    background-color: white;
+    z-index: 10000000000000000000000000000000000000000000000000000000000000;
+    height: 100vh;
+    width: 100%;
+    
+    
+
+}
+
+.donateNav > :first-child
+{
+    width: 70vw;
+}
+
+.donateNav > :not(:first-child) img
+{
+    width: 20vw;
+    margin: 10px;
+}
+
+.donateNav 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30vw;
+      height: 150px;
+      justify-content:center ;
+    
+}
+
+.donateNav  div
+{ 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 3vw;
+}
+
+
+.bill
+{
+    
+    width: 100%;
+    padding: 4vw;
+    display: grid;
+    grid-template-rows:1fr 2fr 1fr ;
+    align-items: center;
+   
+
+}
+
+
+.bill > :first-child h1
+{
+     color: rgb(31, 31, 94);
+     text-align: center;
+}
+
+.btnd
+{
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnss h1{
+    font-size: 4vw;
+    margin: 8px;
+    text-align: center;
+    padding: 5px;
+}
+
+.btnd button{
+    width: 100%;
+    height: 10vw;
+    font-size: 4vw;
+    font-weight: 900;
+    color: white;
+    background-color: gray;
+    border-radius: 5px;
+    cursor: pointer;
+  
+}
+
+.btnd button:hover{
+    width: 100%;
+    height: 10vw;
+    font-size: 4vw;
+    font-weight: 900;
+    color: white;
+    background-color: gray;
+    border-radius: 5px;
+    cursor: pointer;
+  
+}
+
+.billing
+{
+    margin: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+.billing button
+{
+     height: 50px;
+     width: 100%;
+     background-color: gray;
+     cursor: pointer;
+     font-weight: 900;
+     color: white;
+}
+
+.billing button:hover
+{
+     height: 50px;
+     width: 100%;
+     background-color: #5e5d21;
+     cursor: pointer;
+}
+
+.billing input
+{
+    
+    width: 100% ;
+    height: 50px;
+    
+    
+}
+
+.billing input::placeholder
+{
+    text-align: center;
+}
+
+.donatebtn{
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 10px;
+    
+   
+}
+.dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dialog-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  .dialog-content p {
+    margin-bottom: 20px;
+  }
+  
+  .dialog-content button {
+    background-color: blue;
+    color: white;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+
+.rb
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+}

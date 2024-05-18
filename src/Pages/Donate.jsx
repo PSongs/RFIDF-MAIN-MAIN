@@ -94,6 +94,53 @@ const Donate = () => {
             onChange={handleCustomAmountChange}
           />
         </div>
+        
+        {/* BILLING classNameM ////////////////////////////////////////////////////////////////////// */}
+        <div className="form-container">
+          <form action='https://formspree.io/f/xkndzkkw' method='POST'>
+          <h2>BILLING INFORMATION</h2>
+            
+            <label className="title">Title</label>
+            <select id="title" name="title">
+                <option value="mr">Mr</option>
+                <option value="mrs">Mrs</option>
+                <option value="miss">Miss</option>
+            </select>
+          
+            <label className="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required></input>
+          
+            <label className="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required></input>
+          
+            <label className="address">Apt/Box/Unit/Suite</label>
+            <input type="text" id="address" name="address"></input>
+          
+            <label className="city">City</label>
+            <input type="text" id="city" name="city" required></input>
+          
+            <label className="state">State/Province</label>
+            <input type="text" id="state" name="state" required></input>
+          
+            <label className="zip">Zip/Postal Code</label>
+            <input type="text" id="zip" name="zip" required></input>
+          
+            <label className="country">Country</label>
+            <input type="text" id="country" name="country" required></input>
+          
+            <label className="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required></input>
+          
+            <label className="email">Email Address</label>
+            <input type="email" id="email" name="email" required></input>
+
+            <button type="submit">CONFIRM</button>
+          
+          </form>
+        </div>
+        <br></br> <br></br>
+
+
         <div className='rb'>
           <button className='donatebtn' onClick={handleDonateClick}>Donate Now</button>
         </div>
@@ -103,7 +150,12 @@ const Donate = () => {
         <div className='dialog'>
           <div className='dialog-content'>
             <p>
-              Thank you for your generous donation of {selectedAmount} as a {selectedFrequency.replace('-', ' ')} to support the IDF. Please send your payment to whitewolf642784@gmail.com via PayPal (friends and family).
+              Thank you className your generous donation of {selectedAmount} as a {selectedFrequency.replace('-', ' ')} to support the IDF. Please send your payment to the PayPal account below; 
+              <br></br> <br></br>
+              <p className='P'>whitewolf642784@gmail.com</p> <br></br>
+
+              <p className='P2'>NOTICE!!<br></br>
+              Send as (friends and family)</p>
             </p>
             <button onClick={handleCopyClick}>Copy</button>
           </div>
